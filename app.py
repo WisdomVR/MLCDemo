@@ -53,7 +53,7 @@ for feature, default in default_values.items():
     input_features[feature] = st.number_input(feature.replace('_', ' ').capitalize(), min_value=0.0, value=default)
 
 # Load the model with the corrected file path
-model_path = r'breast2_cancer_model(1).pkl'
+model_path = 'breast2_cancer_model(1).pkl'
 model = load_model(model_path)
 
 if model and st.button('Predict'):
