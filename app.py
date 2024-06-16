@@ -17,7 +17,9 @@ from imblearn.over_sampling import SMOTE
 from imblearn.pipeline import make_pipeline as imbalanced_make_pipeline
 import joblib
 import os
-
+# load data
+df = pd.read_csc("data.csv")
+st.write(df.head())
 # Function to load the model
 def load_model(filename):
     if not os.path.isfile(filename):
