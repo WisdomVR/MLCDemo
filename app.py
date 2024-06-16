@@ -13,8 +13,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 from sklearn.pipeline import Pipeline
 from sklearn.decomposition import PCA
-from imblearn.over_sampling import SMOTE
-from imblearn.pipeline import make_pipeline as imbalanced_make_pipeline
+
 import joblib
 import os
 # load data
