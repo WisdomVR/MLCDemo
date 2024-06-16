@@ -17,7 +17,7 @@ def load_model(filename):
 
 st.title('Breast Cancer Prediction App')
 
-# Default values for a benign tumor
+
 default_values = {
     'radius_mean': 12.0,
     'texture_mean': 14.0,
