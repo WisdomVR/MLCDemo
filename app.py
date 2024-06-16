@@ -1,10 +1,22 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-
-
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.impute import SimpleImputer
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+from sklearn.pipeline import Pipeline
+from sklearn.decomposition import PCA
 import joblib
 import os
+
 # load data
 df = pd.read_csv("data.csv")
 st.write(df.head())
