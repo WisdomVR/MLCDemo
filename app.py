@@ -18,7 +18,7 @@ from sklearn.decomposition import PCA
 import joblib
 import os
 # load data
-df = pd.read_csc("data.csv")
+df = pd.read_csv("data.csv")
 st.write(df.head())
 # Function to load the model
 def load_model(filename):
